@@ -1,0 +1,415 @@
+body{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+header{
+    background-image: url(images/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin: 0;
+    z-index: -1;
+  
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.header-content img{
+    z-index: 0;
+    position: absolute;
+    top: 57px;
+    left: 30%;
+}
+.header-content h4{
+    margin: 89px 32px auto 32px;
+    z-index: 1;
+    color: rgba(41, 51, 86, 1);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+.header-content p{
+    margin-top: 8px;
+    z-index: 1;
+    color: rgba(132, 142, 173, 1);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+}
+.second-section{
+    background-color: white;
+    margin-top: -170px;
+    margin-bottom: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 24px;
+    margin-left: 24px;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+ 
+    
+}
+.views{
+    margin-top: 34px;
+    color: rgba(132, 142, 173, 1);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+}
+input[type='range'] {
+    
+    color: rgba(236, 240, 251, 1);
+  
+    
+  }
+input[type=range]::-webkit-slider-thumb {
+    background: url(images/icon-slider.svg),rgba(16, 216, 196, 1);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 10px 0px rgba(16, 216, 196, 0.1);
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+    position: relative;
+    z-index: 1;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    cursor: pointer;
+    background: rgba(236, 240, 251, 1);
+    border-radius: 5px;
+    
+    
+  }
+.form-range{
+    margin-top:25px;
+    
+}
+.slider{
+    position: relative;
+    width: 279px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.sliderAfter{
+    position: absolute;
+    background-color: #A4F3EB;
+    top: 33px;
+    border-radius: 5px;
+    height: 5px;
+    width: 50%;
+    z-index: 1;
+   
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px;
+}
+.price h4{
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 44px;
+text-align: right;
+letter-spacing: -0.8px;
+color: rgba(41, 51, 86, 1);
+}
+.price p{
+    margin: 0;
+    margin-top: 13px;
+    margin-left: 10px;
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(132, 142, 173, 1);
+}
+.checkBox-section{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 34px;
+   
+  
+}
+.checkBox-section p {
+    margin-top: 3px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color:rgba(132, 142, 173, 1);
+
+}
+.form-check{
+    margin: 0;
+}
+.procentAndDiscount p{
+    display: none;
+    color: rgba(255, 141, 104, 1);
+}
+.procentAndDiscount{
+    background-color: rgba(254, 237, 232, 1);
+    border-radius: 9.5px;
+    width: 41px;
+    height: 19px;
+}
+.procent{
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 10px;
+line-height: 14px;
+text-align: center;
+color: rgba(255, 141, 104, 1);
+text-align: center;
+}
+.checkBox-section h4{
+    padding-top: 2px;
+}
+span{
+ display: none;
+}
+.form-check-input:checked{
+    background-color: rgba(122, 234, 223, 1);
+    margin-left: 0;
+}
+
+input.toggle-round {
+    display:none;
+  }
+input.toggle-round + label {
+    padding: 4px;
+    width: 44px;
+    height: 22px;
+    background-color: #ddd;
+    border-radius: 50px;
+    border: 0px solid #ccc;
+  }
+input.toggle-round + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 14px; height: 14px;
+    background-color: white;
+    border-radius: 100%;
+    transition: margin 0.5s;
+  }
+input.toggle-round:checked + label {
+    background-color: lightblue;
+  }
+input.toggle-round:checked + label:after {
+    margin-left: 20px;
+  }
+hr {
+    border: 0;
+    display:block;
+    width: 100%;               
+    background-color:#ECF0FB;
+    height: 1px;
+    margin-top: 38px;
+  }
+.suggestion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+}
+.suggestion p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #848EAD;
+}
+.reports{
+    margin-left: -20px;
+}
+svg{
+    margin-top: 6px;
+}
+button{
+    color: #BECDFF;
+    margin-top: 33px;
+    width: 170px;
+    height: 41px;
+    border-radius: 20.5px;
+    margin-bottom: 32px;
+    background-color: #293356;
+    border: 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+@media screen and (min-width:1440px) {
+    header{
+        background-image: url(images/Rectangle-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        margin: 0;
+        z-index: -1;
+      
+    }
+    
+    .header-content img{
+        z-index: 0;
+        position: absolute;
+        top: 57px;
+        left: 45%;
+    }
+    .header-content h4{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+    }
+    .header-content p{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 12px;
+    }
+    .header-content br{
+        display: none;
+    }
+    .second-section{
+        background-color: white;
+        margin-top: -170px;
+        margin-bottom: 137px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 8px;
+        margin-right: 450px;
+        margin-left: 450px;
+        box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    }
+    .price{
+        order:-1;
+        margin-right:48px;
+    }
+    .price h4{
+        order:-1;
+    }
+    .price p{
+        order:0;
+        margin-left: 8px;
+    }
+    .views{
+        order:-1;
+        margin-left: 58px;
+    }
+    input[type='range'] {
+        height: 8px;
+        color: rgba(236, 240, 251, 1);
+     
+      }
+      input[type=range]::-webkit-slider-runnable-track {
+        height: 8px;
+        cursor: pointer;
+        background: rgba(236, 240, 251, 1);
+        border-radius: 5px;
+        
+      }
+      .sliderAfter{
+        position: absolute;
+        background-color: #A4F3EB;
+        top: 25px;
+        border-radius: 5px;
+        height: 8px;
+        width: 50%;
+        z-index: 1;
+    }
+    .slider{
+        position: relative;
+        width: 444px;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+      .checkBox-section{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        margin-top: 40px;
+        margin-left: 154px;
+    }
+    .procentAndDiscount p{
+        display: flex;
+        text-align: center;
+        margin: 0;
+    }
+    .procentAndDiscount h4{
+        margin-right: 5px;
+    }
+    .procentAndDiscount{
+        background-color: rgba(254, 237, 232, 1);
+        border-radius: 9.5px;
+        width: 95px;
+        height: 19px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .suggestion{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 16px;
+        margin-left: 48px;
+    }
+    .reports{
+        margin: 0;
+        margin-bottom: 33px;
+    }
+    .svg{
+        margin: 0;
+    }
+    button{
+        margin-right: 44px;
+        margin-bottom: 47px;
+    }
+
+}
